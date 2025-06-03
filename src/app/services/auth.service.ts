@@ -16,6 +16,8 @@ export class AuthService {
   private apiUrl:string = 'http://localhost:3000/auth/register' 
 
   sendData(data:authData):Observable<AuthResponse>{
+    console.log("surov servicedan" , this.apiUrl, 'ga ketdi');
+    
     return this.http.post<AuthResponse>(this.apiUrl, data)
   }
 
