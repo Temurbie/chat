@@ -1,0 +1,11 @@
+<form action="" [formGroup]="authFrom" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text"  id="name" formControlName="name">
+    </div>
+    <div class="form-group">
+        <label for="password">Password</label>
+        <input type="text"  id="password" formControlName="password">
+    </div>
+    <button class="btn" type="submit">Send</button>
+</form>
